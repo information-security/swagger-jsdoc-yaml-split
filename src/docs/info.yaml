@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: Sample API (YAML)
+  description: 'This is a sample server description loaded from YAML file'
+  termsOfService: https://utob.ir/terms
+  contact:
+    email: info@utob.ir
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about us
+  url: http://rokhutobsaar.ir

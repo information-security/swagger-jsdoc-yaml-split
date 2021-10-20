@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "swagger-jsdoc-yaml-split",
+  "version": "1.0.0",
+  "description": "A sample repo demonstrating issue #285 at swagger-jsdoc",
+  "main": "./src/index.js",
+  "repository": "https://github.com/information-security/swagger-jsdoc-yaml-split.git",
+  "author": "Farzan",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}

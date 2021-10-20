@@ -1,0 +1,44 @@
+components:
+  schemas:
+    ApiResponseSuccess:
+      type: object
+      properties:
+        code:
+          type: integer
+          default: 0
+    ApiResponseError:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        error:
+          type: string
+        params:
+          type: array
+          items:
+            type: object
+    Credentials:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+          description: Your email address
+          example: 'info@utob.ir'
+        password:
+          type: string
+          description: Your secret
+          example: 'abc123ABC!@#'
+    TokenResponse:
+      allOf:
+        - $ref: '#/components/schemas/ApiResponseSuccess'
+        - type: object
+          required:
+            - accessToken
+          properties:
+            accessToken:
+              type: string
+              example: 'hu75d2puHG7869g7830HHGIgdjd987HJGTHGD894895'
